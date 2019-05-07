@@ -1,9 +1,9 @@
 # csv2dc
+
 Convert a spreadsheet (CSV) file into [Dublin Core](http://dublincore.org/) XML files
 The XML files conform to the [Preservica](http://preservica.com/) naming convention linking them to digital files which they describe.
 
 Use this program if you have local digital files which have not yet been ingested into Preservica.
-
 
 Usage:
 
@@ -12,7 +12,6 @@ Usage:
 The input CSV file should have header column names which start with dc: or dcterms:
 
 Attributes are allowed in elements.
-
 
 for example:
 
@@ -30,7 +29,6 @@ filename | dc:description | dc:identifier | dc:title | dc:subject | dcterms:prov
 -------- | -------------  | ------------- | -------- | ----------- | -----------
 LC-USZ62-20901.tiff | Picture of a plane | LC-USZ62-20901 | Photo Title | Plane | LOC
 LC-USZ62-43601.tiff | Picture of a Car | LC-USZ62-43601 | Photo Title2 | Car | LOC
-
 
 The XML output files are written to the `output` folder specified by the `-o` argument. The XML file name is based on a column header given by the `-c` argument. The default column name for the name of the file is `filename`.
 
