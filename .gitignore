@@ -1,3 +1,6 @@
 /.gradle/
 *.class
 *.project
+.vscode/
+output/
+releases/
